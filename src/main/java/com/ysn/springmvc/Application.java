@@ -11,7 +11,7 @@ public class Application {
 
     @RequestMapping("/")
     public String home() {
-        return "Hello world! I'm learing Spring Framework for REST API";
+        return "Hello world! I'm learning Spring Framework for REST API";
     }
 
     public static void main(String[] args) {
