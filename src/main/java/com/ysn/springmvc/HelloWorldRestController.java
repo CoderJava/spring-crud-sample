@@ -15,7 +15,7 @@ import java.util.List;
 public class HelloWorldRestController {
 
     @Autowired
-    UserService userService;    // Service which will do all data retrieval/manipulation work
+    private UserService userService;    // Service which will do all data retrieval/manipulation work
 
     /**
      * Retrieve all users
@@ -27,8 +27,8 @@ public class HelloWorldRestController {
         List<User> users = userService.findAllUsers();
         if (users.isEmpty()) {
             // You many decide to return HttpStatus.NOT_FOUND
-            return new ResponseEntity<List<User>>(HttpStatus.NO_CONTENT);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
-        return new ResponseEntity<List<User>>(users, HttpStatus.OK);
+        return new ResponseEntity<>(users, HttpStatus.OK);
     }
 }
