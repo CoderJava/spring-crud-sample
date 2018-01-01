@@ -20,7 +20,7 @@ public class UserController {
     UserRepository userRepository;
 
     /**
-     * Retrieve all of users
+     * Retrieve all of users API
      *
      * @return List all of users
      */
@@ -39,7 +39,7 @@ public class UserController {
     }
 
     /**
-     * Create a user
+     * Create a user API
      *
      * @param user {User} Value of user
      * @return Result of executed with data user
@@ -50,19 +50,19 @@ public class UserController {
         Map<String, Object> mapDataReturn = new HashMap<>();
         Diagnostic diagnostic = new Diagnostic();
         diagnostic.setUnix_timestamp(new Date().getTime());
-        boolean isValid = true;
+        boolean isFieldValid = true;
         if (user.getName() == null || user.getName().trim().isEmpty()) {
             diagnostic.setMessage("Field name is required.");
-            isValid = false;
+            isFieldValid = false;
         } else if (user.getAge() == 0) {
             diagnostic.setMessage("Field age is required.");
-            isValid = false;
+            isFieldValid = false;
         } else if (user.getSalary() == 0) {
             diagnostic.setMessage("Field salary is required.");
-            isValid = false;
+            isFieldValid = false;
         }
 
-        if (!isValid) {
+        if (!isFieldValid) {
             diagnostic.setStatus(HttpStatus.BAD_REQUEST.value());
             mapDataReturn.put("diagnostic", diagnostic);
             return new ResponseEntity<>(mapDataReturn, HttpStatus.BAD_REQUEST);
@@ -77,9 +77,9 @@ public class UserController {
     }
 
     /**
-     * Update a user
+     * Update a user API
      *
-     * @param id {long} ID of a user
+     * @param id   {long} ID of a user
      * @param user {User} Value a user
      * @return Result of executed with data user
      */
@@ -125,6 +125,36 @@ public class UserController {
         diagnostic.setMessage(HttpStatus.OK.name());
         mapDataReturn.put("diagnostic", diagnostic);
         mapDataReturn.put("data", userLocal);
+        return new ResponseEntity<>(mapDataReturn, HttpStatus.OK);
+    }
+
+    /**
+     * Delete a user API
+     *
+     * @param id {long} ID of user
+     * @return Result of executed with data user
+     */
+    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+    public ResponseEntity<Map<String, Object>> deleteUser(@PathVariable("id") long id) {
+        Log("deleteUser");
+        Map<String, Object> mapDataReturn = new HashMap<>();
+
+        Diagnostic diagnostic = new Diagnostic();
+        diagnostic.setUnix_timestamp(new Date().getTime());
+        User userLocal = userRepository.findOne(id);
+        if (userLocal == null) {
+            diagnostic.setStatus(HttpStatus.NO_CONTENT.value());
+            diagnostic.setMessage(HttpStatus.NO_CONTENT.name());
+            mapDataReturn.put("diagnostic", diagnostic);
+            return new ResponseEntity<>(mapDataReturn, HttpStatus.NO_CONTENT);
+        }
+
+        userRepository.delete(id);
+        mapDataReturn.put("data", userLocal);
+
+        diagnostic.setStatus(HttpStatus.OK.value());
+        diagnostic.setMessage(HttpStatus.OK.name());
+        mapDataReturn.put("diagnostic", diagnostic);
         return new ResponseEntity<>(mapDataReturn, HttpStatus.OK);
     }
 
