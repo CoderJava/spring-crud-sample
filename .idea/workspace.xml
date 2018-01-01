@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90e28547-143d-415b-84ed-6bc0e875c9cb" name="Default" comment="Clean up code">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20171018.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/base/Diagnostic.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/user/User.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20171018.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spring4MVCCRUDRestServiceSample.iml" afterPath="$PROJECT_DIR$/Spring4MVCCRUDRestServiceSample.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/repository/UserRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/repository/UserRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,8 +19,8 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+            <state relative-caret-position="210">
+              <caret line="49" column="35" lean-forward="true" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2065#2066#0" expanded="true" />
@@ -78,8 +71,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/user/Data.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/user/DataUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/user/DataUsers.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -547,7 +540,42 @@
       <option name="project" value="LOCAL" />
       <updated>1514787086446</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Clean up code">
+      <created>1514810189780</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1514810189780</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Remove username and password PostgreSQL">
+      <created>1514810311492</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1514810311492</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Create Diagnostic POJO and moved User POJO to package model/user">
+      <created>1514810377009</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1514810377009</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Update import package User POJO">
+      <created>1514810409157</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1514810409157</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Add documentation endpoint path listAllUsers and createUser">
+      <created>1514810468053</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1514810468053</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -633,7 +661,11 @@
     <MESSAGE value="Create a UserController file" />
     <MESSAGE value="Update a Application.java" />
     <MESSAGE value="Clean up code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean up code" />
+    <MESSAGE value="Remove username and password PostgreSQL" />
+    <MESSAGE value="Create Diagnostic POJO and moved User POJO to package model/user" />
+    <MESSAGE value="Update import package User POJO" />
+    <MESSAGE value="Add documentation endpoint path listAllUsers and createUser" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add documentation endpoint path listAllUsers and createUser" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -725,14 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="79" column="20" lean-forward="false" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -780,10 +804,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        <state relative-caret-position="210">
+          <caret line="49" column="35" lean-forward="true" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2065#2066#0" expanded="true" />
