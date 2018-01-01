@@ -39,6 +39,39 @@ public class UserController {
     }
 
     /**
+     * Retrieve a user
+     *
+     * @param id {long} ID a user
+     * @return Result of exeucted with data user
+     */
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Map<String, Object>> retrieveUser(@PathVariable("id") long id) {
+        Log("retrieve user");
+        Map<String, Object> mapData = new HashMap<>();
+
+        Diagnostic diagnostic = new Diagnostic();
+        diagnostic.setUnix_timestamp(new Date().getTime());
+        User userLocal = userRepository.findOne(id);
+        boolean isDataAlreadyExist = true;
+        if (userLocal == null) {
+            isDataAlreadyExist = false;
+            diagnostic.setStatus(HttpStatus.NO_CONTENT.value());
+            diagnostic.setMessage(HttpStatus.NO_CONTENT.name());
+        } else {
+            diagnostic.setStatus(HttpStatus.OK.value());
+            diagnostic.setMessage(HttpStatus.OK.name());
+        }
+        mapData.put("diagnostic", diagnostic);
+        mapData.put("data", userLocal);
+        return new ResponseEntity<>(
+                mapData,
+                isDataAlreadyExist
+                        ? HttpStatus.OK
+                        : HttpStatus.NO_CONTENT
+        );
+    }
+
+    /**
      * Create a user API
      *
      * @param user {User} Value of user
