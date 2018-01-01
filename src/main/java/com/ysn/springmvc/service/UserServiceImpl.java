@@ -51,7 +51,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void udpateUser(User user) {
+    public void updateUser(User user) {
         int index = users.indexOf(user);
         users.set(index, user);
     }
@@ -71,4 +71,8 @@ public class UserServiceImpl implements UserService {
         users.clear();
     }
 
+    @Override
+    public boolean isUserExist(User user) {
+        return findByName(user.getName()) != null;
+    }
 }
