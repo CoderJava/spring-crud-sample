@@ -32,7 +32,7 @@ public class UserController {
         Log("listAllUsers");
         Map<String, Object> mapData = new HashMap<>();
         List<User> users = new ArrayList<>();
-        Diagnostic diagnostic = new Diagnostic(HttpStatus.OK, new Date().getTime());
+        Diagnostic diagnostic = new Diagnostic(HttpStatus.OK.value(), HttpStatus.OK.name(), new Date().getTime());
         mapData.put("diagnostic", diagnostic);
         for (User user : userRepository.findAll()) {
             users.add(user);
@@ -48,10 +48,35 @@ public class UserController {
      * @return Result of executed with data user
      */
     @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<User> createUser(@RequestBody User user) {
+    public ResponseEntity<Map<String, Object>> createUser(@RequestBody User user) {
         Log("createUer");
+        Map<String, Object> mapDataReturn = new HashMap<>();
+        Diagnostic diagnostic = new Diagnostic();
+        diagnostic.setUnix_timestamp(new Date().getTime());
+        boolean isValid = true;
+        if (user.getName().trim().isEmpty()) {
+            diagnostic.setMessage("Field name is required.");
+            isValid = false;
+        } else if (user.getAge() == 0) {
+            diagnostic.setMessage("Field age is required.");
+            isValid = false;
+        } else if (user.getSalary() == 0) {
+            diagnostic.setMessage("Field salary is required.");
+            isValid = false;
+        }
+
+        if (!isValid) {
+            diagnostic.setStatus(HttpStatus.BAD_REQUEST.value());
+            mapDataReturn.put("diagnostic", diagnostic);
+            return new ResponseEntity<>(mapDataReturn, HttpStatus.BAD_REQUEST);
+        } else {
+            diagnostic.setStatus(HttpStatus.CREATED.value());
+            diagnostic.setMessage(HttpStatus.CREATED.name());
+            mapDataReturn.put("diagnostic", diagnostic);
+        }
+        mapDataReturn.put("data", user);
         userRepository.save(user);
-        return new ResponseEntity<>(user, HttpStatus.CREATED);
+        return new ResponseEntity<>(mapDataReturn, HttpStatus.CREATED);
     }
 
     /**
