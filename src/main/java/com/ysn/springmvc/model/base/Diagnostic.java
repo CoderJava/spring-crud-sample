@@ -1,26 +1,34 @@
 package com.ysn.springmvc.model.base;
 
-import org.springframework.http.HttpStatus;
-
 public class Diagnostic {
 
-    private HttpStatus status;
+    private int status;
+    private String message;
     private long unix_timestamp;
 
     public Diagnostic() {
     }
 
-    public Diagnostic(HttpStatus status, long unix_timestamp) {
+    public Diagnostic(int status, String message, long unix_timestamp) {
         this.status = status;
+        this.message = message;
         this.unix_timestamp = unix_timestamp;
     }
 
-    public HttpStatus getStatus() {
+    public int getStatus() {
         return status;
     }
 
-    public void setStatus(HttpStatus status) {
+    public void setStatus(int status) {
         this.status = status;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     public long getUnix_timestamp() {
@@ -34,7 +42,8 @@ public class Diagnostic {
     @Override
     public String toString() {
         return "Diagnostic{" +
-                "status='" + status + '\'' +
+                "status=" + status +
+                ", message='" + message + '\'' +
                 ", unix_timestamp=" + unix_timestamp +
                 '}';
     }
