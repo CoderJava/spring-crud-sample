@@ -18,12 +18,12 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="69" column="53" lean-forward="false" selection-start-line="69" selection-start-column="53" selection-end-line="69" selection-end-column="53" />
+            <state relative-caret-position="300">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5271#5272#0" expanded="true" />
-                <element signature="e#5314#5315#0" expanded="true" />
+                <element signature="e#6476#6477#0" expanded="true" />
+                <element signature="e#6519#6520#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -246,11 +246,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring4MVCCRUDRestServiceSample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring4MVCCRUDRestServiceSample" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Spring4MVCCRUDRestServiceSample" type="b2602c69:ProjectViewProjectNode" />
@@ -671,7 +666,21 @@
       <option name="project" value="LOCAL" />
       <updated>1514814103474</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Clean up code">
+      <created>1514814112399</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1514814112399</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Add endpoint for delete user">
+      <created>1514814854288</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1514814854288</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -736,7 +745,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update a workspace.xml file" />
     <MESSAGE value="Create a POJO User" />
     <MESSAGE value="Update interface UserService and implement it in class UserServiceImpl" />
     <MESSAGE value="Create HelloWorldRestController" />
@@ -759,9 +767,10 @@
     <MESSAGE value="Add documentation endpoint path listAllUsers and createUser" />
     <MESSAGE value="Update add field status as int and change message as String" />
     <MESSAGE value="Update called constructor Diagnostic" />
-    <MESSAGE value="Clean up code" />
     <MESSAGE value="Create endpoint path for update user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create endpoint path for update user" />
+    <MESSAGE value="Clean up code" />
+    <MESSAGE value="Add endpoint for delete user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add endpoint for delete user" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -850,7 +859,7 @@
         <state relative-caret-position="180">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -912,12 +921,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="69" column="53" lean-forward="false" selection-start-line="69" selection-start-column="53" selection-end-line="69" selection-end-column="53" />
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5271#5272#0" expanded="true" />
-            <element signature="e#5314#5315#0" expanded="true" />
+            <element signature="e#6476#6477#0" expanded="true" />
+            <element signature="e#6519#6520#0" expanded="true" />
           </folding>
         </state>
       </provider>
