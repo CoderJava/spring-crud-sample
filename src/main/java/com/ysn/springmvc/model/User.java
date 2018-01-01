@@ -1,14 +1,35 @@
 package com.ysn.springmvc.model;
 
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Parameter;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "users")
 public class User {
 
+    @GenericGenerator(
+            name = "usersSequenceGenerator",
+            strategy = "org.hibernate.id.enhanced.SequenceStyleGenerator",
+            parameters = {
+                    @Parameter(name = "sequence_name", value = "userSequence"),
+                    @Parameter(name = "initial_value", value = "1"),
+                    @Parameter(name = "increment_size", value = "1")
+            }
+    )
+
+    @Id
+    @GeneratedValue(generator = "usersSequenceGenerator")
     private long id;
     private String name;
     private int age;
     private double salary;
 
     public User() {
-        id = 0;
     }
 
     public User(long id, String name, int age, double salary) {
