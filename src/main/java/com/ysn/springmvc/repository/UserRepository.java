@@ -1,6 +1,6 @@
 package com.ysn.springmvc.repository;
 
-import com.ysn.springmvc.model.User;
+import com.ysn.springmvc.model.user.User;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
