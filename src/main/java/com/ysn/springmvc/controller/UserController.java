@@ -8,10 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
@@ -54,7 +51,7 @@ public class UserController {
         Diagnostic diagnostic = new Diagnostic();
         diagnostic.setUnix_timestamp(new Date().getTime());
         boolean isValid = true;
-        if (user.getName().trim().isEmpty()) {
+        if (user.getName() == null || user.getName().trim().isEmpty()) {
             diagnostic.setMessage("Field name is required.");
             isValid = false;
         } else if (user.getAge() == 0) {
@@ -77,6 +74,58 @@ public class UserController {
         mapDataReturn.put("data", user);
         userRepository.save(user);
         return new ResponseEntity<>(mapDataReturn, HttpStatus.CREATED);
+    }
+
+    /**
+     * Update a user
+     *
+     * @param id {long} ID of a user
+     * @param user {User} Value a user
+     * @return Result of executed with data user
+     */
+    @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
+    public ResponseEntity<Map<String, Object>> updateUser(@PathVariable("id") long id, @RequestBody User user) {
+        Log("updateUser");
+        Map<String, Object> mapDataReturn = new HashMap<>();
+
+        Diagnostic diagnostic = new Diagnostic();
+        diagnostic.setUnix_timestamp(new Date().getTime());
+        User userLocal = userRepository.findOne(id);
+        if (userLocal == null) {
+            diagnostic.setStatus(HttpStatus.NO_CONTENT.value());
+            diagnostic.setMessage(HttpStatus.NO_CONTENT.name());
+            mapDataReturn.put("diagnostic", diagnostic);
+            return new ResponseEntity<>(mapDataReturn, HttpStatus.NO_CONTENT);
+        }
+
+        boolean isFieldValid = true;
+        if (user.getName() == null || user.getName().trim().isEmpty()) {
+            isFieldValid = false;
+            diagnostic.setStatus(HttpStatus.BAD_REQUEST.value());
+            diagnostic.setMessage("Field name is required.");
+        } else if (user.getAge() == 0) {
+            isFieldValid = false;
+            diagnostic.setStatus(HttpStatus.BAD_REQUEST.value());
+            diagnostic.setMessage("Field age is required.");
+        } else if (user.getSalary() == 0) {
+            isFieldValid = false;
+            diagnostic.setStatus(HttpStatus.BAD_REQUEST.value());
+            diagnostic.setMessage("Field salary is required.");
+        }
+        if (!isFieldValid) {
+            mapDataReturn.put("diagnostic", diagnostic);
+            return new ResponseEntity<>(mapDataReturn, HttpStatus.BAD_REQUEST);
+        }
+
+        userLocal.setName(user.getName());
+        userLocal.setAge(user.getAge());
+        userLocal.setSalary(user.getSalary());
+        userRepository.save(userLocal);
+        diagnostic.setStatus(HttpStatus.OK.value());
+        diagnostic.setMessage(HttpStatus.OK.name());
+        mapDataReturn.put("diagnostic", diagnostic);
+        mapDataReturn.put("data", userLocal);
+        return new ResponseEntity<>(mapDataReturn, HttpStatus.OK);
     }
 
     /**
