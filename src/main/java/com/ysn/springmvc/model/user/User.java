@@ -1,4 +1,4 @@
-package com.ysn.springmvc.model;
+package com.ysn.springmvc.model.user;
 
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
