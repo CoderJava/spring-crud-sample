@@ -64,7 +64,7 @@ public class LocationController {
     )
     @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Map<String, Object>> createLocation(@RequestBody Location location) {
-        log("createLocation");
+        log("createLocation: " + location);
         Map<String, Object> mapDataReturn = new HashMap<>();
         Diagnostic diagnostic = new Diagnostic();
         diagnostic.setUnix_timestamp(new Date().getTime());
