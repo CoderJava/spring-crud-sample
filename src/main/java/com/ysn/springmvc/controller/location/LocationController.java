@@ -3,6 +3,7 @@ package com.ysn.springmvc.controller.location;
 import com.ysn.springmvc.model.base.Diagnostic;
 import com.ysn.springmvc.model.location.Location;
 import com.ysn.springmvc.repository.user.location.LocationRepository;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -26,6 +27,13 @@ public class LocationController {
      *
      * @return List all of locations
      */
+    @ApiOperation(
+            value = "Retrieve all of locations data",
+            notes = "Retrieve all of locations data from GPS Tracker",
+            response = Location.class,
+            responseContainer = "List",
+            produces = "application/json"
+    )
     @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Map<String, Object>> listAllLocations() {
         log("listAllLocations");
@@ -46,6 +54,14 @@ public class LocationController {
      * @param location {Location} Value of location
      * @return Result of executed with location user
      */
+    @ApiOperation(
+            value = "Create a location data",
+            notes = "Create a location data from GPS Tracker",
+            response = Location.class,
+            responseContainer = "List",
+            produces = "application/json",
+            consumes = "application/json"
+    )
     @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Map<String, Object>> createLocation(@RequestBody Location location) {
         log("createLocation");
