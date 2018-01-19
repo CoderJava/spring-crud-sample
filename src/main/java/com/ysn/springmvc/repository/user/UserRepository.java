@@ -1,4 +1,4 @@
-package com.ysn.springmvc.repository;
+package com.ysn.springmvc.repository.user;
 
 import com.ysn.springmvc.model.user.User;
 import org.springframework.data.repository.CrudRepository;

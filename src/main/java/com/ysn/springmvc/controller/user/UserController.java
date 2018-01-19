@@ -1,9 +1,9 @@
-package com.ysn.springmvc.controller;
+package com.ysn.springmvc.controller.user;
 
 
 import com.ysn.springmvc.model.base.Diagnostic;
 import com.ysn.springmvc.model.user.User;
-import com.ysn.springmvc.repository.UserRepository;
+import com.ysn.springmvc.repository.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -26,7 +26,7 @@ public class UserController {
      */
     @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Map<String, Object>> listAllUsers() {
-        Log("listAllUsers");
+        log("listAllUsers");
         Map<String, Object> mapData = new HashMap<>();
         List<User> users = new ArrayList<>();
         Diagnostic diagnostic = new Diagnostic(HttpStatus.OK.value(), HttpStatus.OK.name(), new Date().getTime());
@@ -46,7 +46,7 @@ public class UserController {
      */
     @RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Map<String, Object>> retrieveUser(@PathVariable("id") long id) {
-        Log("retrieve user");
+        log("retrieve user");
         Map<String, Object> mapData = new HashMap<>();
 
         Diagnostic diagnostic = new Diagnostic();
@@ -79,7 +79,7 @@ public class UserController {
      */
     @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Map<String, Object>> createUser(@RequestBody User user) {
-        Log("createUer");
+        log("createUer");
         Map<String, Object> mapDataReturn = new HashMap<>();
         Diagnostic diagnostic = new Diagnostic();
         diagnostic.setUnix_timestamp(new Date().getTime());
@@ -118,7 +118,7 @@ public class UserController {
      */
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
     public ResponseEntity<Map<String, Object>> updateUser(@PathVariable("id") long id, @RequestBody User user) {
-        Log("updateUser");
+        log("updateUser");
         Map<String, Object> mapDataReturn = new HashMap<>();
 
         Diagnostic diagnostic = new Diagnostic();
@@ -169,7 +169,7 @@ public class UserController {
      */
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<Map<String, Object>> deleteUser(@PathVariable("id") long id) {
-        Log("deleteUser");
+        log("deleteUser");
         Map<String, Object> mapDataReturn = new HashMap<>();
 
         Diagnostic diagnostic = new Diagnostic();
@@ -192,11 +192,11 @@ public class UserController {
     }
 
     /**
-     * Log message to printout in console
+     * log message to printout in console
      *
      * @param message {String} Message for printout in console
      */
-    private void Log(String message) {
+    private void log(String message) {
         System.out.println(message);
     }
 }

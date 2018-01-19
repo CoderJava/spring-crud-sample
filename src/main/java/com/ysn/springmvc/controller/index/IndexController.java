@@ -1,4 +1,4 @@
-package com.ysn.springmvc.controller;
+package com.ysn.springmvc.controller.index;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
