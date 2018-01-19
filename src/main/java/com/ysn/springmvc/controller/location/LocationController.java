@@ -21,6 +21,11 @@ public class LocationController {
     @Autowired
     LocationRepository locationRepository;
 
+    /**
+     * Retrieve all of locations API
+     *
+     * @return List all of locations
+     */
     @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Map<String, Object>> listAllLocations() {
         log("listAllLocations");
@@ -35,6 +40,12 @@ public class LocationController {
         return new ResponseEntity<>(mapData, HttpStatus.OK);
     }
 
+    /**
+     * Create a location API
+     *
+     * @param location {Location} Value of location
+     * @return Result of executed with location user
+     */
     @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Map<String, Object>> createLocation(@RequestBody Location location) {
         log("createLocation");
