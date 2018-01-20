@@ -73,6 +73,15 @@ public class LocationController {
         if (location.getDatetime() == null) {
             diagnostic.setMessage("Field name is required");
             isFieldValid = false;
+        } else if (location.getLatitude() == 0.0) {
+            diagnostic.setMessage("Field latitude is required");
+            isFieldValid = false;
+        } else if (location.getLongitude() == 0.0) {
+            diagnostic.setMessage("Field longitude is required");
+            isFieldValid = false;
+        } else if (location.getSpeed() < 0) {
+            diagnostic.setMessage("Field speed is required");
+            isFieldValid = false;
         }
 
         if (!isFieldValid) {
