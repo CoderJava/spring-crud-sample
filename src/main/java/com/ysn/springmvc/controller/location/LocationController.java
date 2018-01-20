@@ -70,6 +70,11 @@ public class LocationController {
         diagnostic.setUnix_timestamp(new Date().getTime());
         boolean isFieldValid = true;
 
+        if (location.getDatetime() == null) {
+            diagnostic.setMessage("Field name is required");
+            isFieldValid = false;
+        }
+
         if (!isFieldValid) {
             diagnostic.setStatus(HttpStatus.BAD_REQUEST.value());
             mapDataReturn.put("diagnostic", diagnostic);
