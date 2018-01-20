@@ -8,10 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
@@ -51,10 +48,10 @@ public class LocationController {
     /**
      * Create a location API
      *
-     * @param {Location} Value of location
+     * @param location {Location} Value of location
      * @return Result of executed with location user
      */
-    /*@ApiOperation(
+    @ApiOperation(
             value = "Create a location data",
             notes = "Create a location data from GPS Tracker",
             response = Location.class,
@@ -96,7 +93,7 @@ public class LocationController {
         mapDataReturn.put("data", location);
         locationRepository.save(location);
         return new ResponseEntity<>(mapDataReturn, HttpStatus.CREATED);
-    }*/
+    }
 
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<Map<String, Object>> createLocation(@RequestParam String datetime, @RequestParam  double latitude, @RequestParam  double longitude, @RequestParam  int speed) {

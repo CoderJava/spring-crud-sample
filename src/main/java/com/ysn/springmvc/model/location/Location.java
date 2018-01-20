@@ -28,12 +28,12 @@ public class Location {
     private String datetime;
     private double latitude;
     private double longitude;
-    private int speed;
+    private double speed;
 
     public Location() {
     }
 
-    public Location(long id, String datetime, double latitude, double longitude, int speed) {
+    public Location(long id, String datetime, double latitude, double longitude, double speed) {
         this.id = id;
         this.datetime = datetime;
         this.latitude = latitude;
@@ -73,11 +73,11 @@ public class Location {
         this.longitude = longitude;
     }
 
-    public int getSpeed() {
+    public double getSpeed() {
         return speed;
     }
 
-    public void setSpeed(int speed) {
+    public void setSpeed(double speed) {
         this.speed = speed;
     }
 
