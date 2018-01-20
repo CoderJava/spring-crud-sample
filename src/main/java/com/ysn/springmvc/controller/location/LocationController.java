@@ -96,7 +96,7 @@ public class LocationController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public ResponseEntity<Map<String, Object>> createLocation(@RequestParam String datetime, @RequestParam  double latitude, @RequestParam  double longitude, @RequestParam  int speed) {
+    public ResponseEntity<Map<String, Object>> createLocation(@RequestParam String datetime, @RequestParam  double latitude, @RequestParam  double longitude, @RequestParam  double speed) {
         Location location = new Location(0, datetime, latitude, longitude, speed);
         log("createLocation by route parameter: " + location);
         Map<String, Object> mapDataReturn = new HashMap<>();
