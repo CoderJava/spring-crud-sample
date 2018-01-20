@@ -75,8 +75,8 @@
       <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            <state relative-caret-position="135">
+              <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -358,13 +358,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514610213619</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Create Procfile file">
-      <created>1514714428642</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1514714428642</updated>
     </task>
     <task id="LOCAL-00003" summary="Create system.properties file">
       <created>1514714445775</created>
@@ -702,7 +695,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516457100883</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Update file application.properties">
+      <created>1516458678248</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1516458678248</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -767,7 +767,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create a UserController file" />
     <MESSAGE value="Update a Application.java" />
     <MESSAGE value="Remove username and password PostgreSQL" />
     <MESSAGE value="Create Diagnostic POJO and moved User POJO to package model/user" />
@@ -792,7 +791,8 @@
     <MESSAGE value="Update type data speed from int to double in parameter createLocation with route parameter" />
     <MESSAGE value="Update database from localhost to amazon web service" />
     <MESSAGE value="Change ddl-auto from create to be create-drop" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change ddl-auto from create to be create-drop" />
+    <MESSAGE value="Update file application.properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update file application.properties" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1278,8 +1278,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        <state relative-caret-position="135">
+          <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
           <folding />
         </state>
       </provider>
