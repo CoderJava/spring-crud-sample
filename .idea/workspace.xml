@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90e28547-143d-415b-84ed-6bc0e875c9cb" name="Default" comment="Add latitude">
+    <list default="true" id="90e28547-143d-415b-84ed-6bc0e875c9cb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/location/LocationController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/location/LocationController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/location/Location.java" afterPath="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/location/Location.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,14 +16,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.5493562">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/user/UserController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="94" column="32" lean-forward="false" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
+                <state relative-caret-position="1014">
+                  <caret line="175" column="51" lean-forward="false" selection-start-line="175" selection-start-column="51" selection-end-line="175" selection-end-column="51" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -78,8 +78,8 @@
           <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
+                <state relative-caret-position="60">
+                  <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -117,27 +117,27 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="LocationController.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/location/LocationController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="363">
+                  <caret line="73" column="12" lean-forward="false" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="LocationController.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/location/LocationController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="303">
-                  <caret line="72" column="20" lean-forward="false" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="LocationRepository.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/repository/user/location/LocationRepository.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="51" lean-forward="false" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+                <state relative-caret-position="150">
+                  <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -145,16 +145,17 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Location.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Location.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/location/Location.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="618">
-                  <caret line="61" column="4" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
+                <state relative-caret-position="540">
+                  <caret line="36" column="20" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#1463#1464#0" expanded="true" />
                     <element signature="e#1503#1504#0" expanded="true" />
                     <element signature="e#1538#1539#0" expanded="true" />
+                    <element signature="e#1569#1570#0" expanded="true" />
                     <element signature="e#1617#1618#0" expanded="true" />
                     <element signature="e#1657#1658#0" expanded="true" />
                     <element signature="e#1693#1694#0" expanded="true" />
@@ -165,6 +166,18 @@
                     <element signature="e#1874#1875#0" expanded="true" />
                     <element signature="e#1913#1914#0" expanded="true" />
                     <element signature="e#1947#1948#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LocationController.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/location/LocationController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="693">
+                  <caret line="132" column="4" lean-forward="false" selection-start-line="132" selection-start-column="4" selection-end-line="132" selection-end-column="4" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -181,6 +194,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>college</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -204,7 +222,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/service/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/User1Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/User2Controller.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/user/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/user/Data.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/user/DataUser.java" />
@@ -220,8 +237,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/user/UserController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/config/swagger/SwaggerConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/location/LocationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/location/Location.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/location/LocationController.java" />
       </list>
     </option>
   </component>
@@ -922,7 +940,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516408116551</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Add latitude, longitude, and speed in Location Controller">
+      <created>1516432418729</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1516432418729</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -942,6 +967,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24749643" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -954,7 +980,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32844576" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -987,7 +1012,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update dependency maven" />
     <MESSAGE value="Update dependency maven file" />
     <MESSAGE value="Drop UserService, UserServiceImpl and HelloWorldRestController" />
     <MESSAGE value="Config PostgreSQL in application.properties file" />
@@ -1012,7 +1036,8 @@
     <MESSAGE value="Add log data ketika create data location" />
     <MESSAGE value="Update field location" />
     <MESSAGE value="Add validation null when create location endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add validation null when create location endpoint" />
+    <MESSAGE value="Add latitude, longitude, and speed in Location Controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add latitude, longitude, and speed in Location Controller" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1129,6 +1154,7 @@
             <element signature="e#1463#1464#0" expanded="true" />
             <element signature="e#1503#1504#0" expanded="true" />
             <element signature="e#1538#1539#0" expanded="true" />
+            <element signature="e#1569#1570#0" expanded="true" />
             <element signature="e#1617#1618#0" expanded="true" />
             <element signature="e#1657#1658#0" expanded="true" />
             <element signature="e#1693#1694#0" expanded="true" />
@@ -1284,14 +1310,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/user/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
@@ -1338,45 +1356,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/user/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="94" column="32" lean-forward="false" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/location/LocationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="72" column="20" lean-forward="false" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/repository/user/location/LocationRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="51" lean-forward="false" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/location/Location.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="61" column="4" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
+        <state relative-caret-position="540">
+          <caret line="36" column="20" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1463#1464#0" expanded="true" />
             <element signature="e#1503#1504#0" expanded="true" />
             <element signature="e#1538#1539#0" expanded="true" />
+            <element signature="e#1569#1570#0" expanded="true" />
             <element signature="e#1617#1618#0" expanded="true" />
             <element signature="e#1657#1658#0" expanded="true" />
             <element signature="e#1693#1694#0" expanded="true" />
@@ -1387,6 +1376,44 @@
             <element signature="e#1874#1875#0" expanded="true" />
             <element signature="e#1913#1914#0" expanded="true" />
             <element signature="e#1947#1948#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/user/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1014">
+          <caret line="175" column="51" lean-forward="false" selection-start-line="175" selection-start-column="51" selection-end-line="175" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/repository/user/location/LocationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/location/LocationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="132" column="4" lean-forward="false" selection-start-line="132" selection-start-column="4" selection-end-line="132" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
