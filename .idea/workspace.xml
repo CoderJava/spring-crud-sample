@@ -174,8 +174,8 @@
           <file leaf-file-name="LocationController.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/location/LocationController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="693">
-                  <caret line="132" column="4" lean-forward="false" selection-start-line="132" selection-start-column="4" selection-end-line="132" selection-end-column="4" />
+                <state relative-caret-position="60">
+                  <caret line="50" column="12" lean-forward="false" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -947,7 +947,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516432418729</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Add endpoint create location with route parameter">
+      <created>1516435964978</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1516435964978</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1012,7 +1019,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update dependency maven file" />
     <MESSAGE value="Drop UserService, UserServiceImpl and HelloWorldRestController" />
     <MESSAGE value="Config PostgreSQL in application.properties file" />
     <MESSAGE value="Update User POJO" />
@@ -1037,7 +1043,8 @@
     <MESSAGE value="Update field location" />
     <MESSAGE value="Add validation null when create location endpoint" />
     <MESSAGE value="Add latitude, longitude, and speed in Location Controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add latitude, longitude, and speed in Location Controller" />
+    <MESSAGE value="Add endpoint create location with route parameter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add endpoint create location with route parameter" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1410,8 +1417,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/location/LocationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="132" column="4" lean-forward="false" selection-start-line="132" selection-start-column="4" selection-end-line="132" selection-end-column="4" />
+        <state relative-caret-position="60">
+          <caret line="50" column="12" lean-forward="false" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
