@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90e28547-143d-415b-84ed-6bc0e875c9cb" name="Default" comment="Comment endpoint createLocation with request body">
+    <list default="true" id="90e28547-143d-415b-84ed-6bc0e875c9cb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
     </list>
@@ -74,11 +74,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+          <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+                <state relative-caret-position="195">
+                  <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -116,7 +116,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="LocationController.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="LocationController.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/location/LocationController.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="288">
@@ -173,8 +173,8 @@
           <file leaf-file-name="LocationController.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/location/LocationController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="462">
-                  <caret line="112" column="51" lean-forward="false" selection-start-line="112" selection-start-column="51" selection-end-line="112" selection-end-column="51" />
+                <state relative-caret-position="537">
+                  <caret line="117" column="32" lean-forward="false" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -236,9 +236,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/user/UserController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/config/swagger/SwaggerConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/location/Location.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/location/LocationController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -753,7 +753,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516438321924</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Update database from localhost to amazon web service">
+      <created>1516456753519</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1516456753519</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -818,7 +825,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create file UserRepository" />
     <MESSAGE value="Create a IndexController" />
     <MESSAGE value="Create a UserController file" />
     <MESSAGE value="Update a Application.java" />
@@ -843,7 +849,8 @@
     <MESSAGE value="Comment endpoint createLocation with request body" />
     <MESSAGE value="Change type data speed to double and uncomment endpoint createLocation with RequestBody" />
     <MESSAGE value="Update type data speed from int to double in parameter createLocation with route parameter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update type data speed from int to double in parameter createLocation with route parameter" />
+    <MESSAGE value="Update database from localhost to amazon web service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update database from localhost to amazon web service" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1240,14 +1247,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/user/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2625">
@@ -1299,6 +1298,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
