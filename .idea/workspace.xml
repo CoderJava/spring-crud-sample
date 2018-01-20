@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90e28547-143d-415b-84ed-6bc0e875c9cb" name="Default" comment="Add Swagger">
+    <list default="true" id="90e28547-143d-415b-84ed-6bc0e875c9cb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/location/LocationController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/location/LocationController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/location/Location.java" afterPath="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/location/Location.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -123,12 +124,12 @@
           <file leaf-file-name="LocationController.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/location/LocationController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="555">
-                  <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+                <state relative-caret-position="330">
+                  <caret line="65" column="31" lean-forward="true" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#3806#3807#0" expanded="true" />
-                    <element signature="e#3849#3850#0" expanded="true" />
+                    <element signature="e#3462#3463#0" expanded="true" />
+                    <element signature="e#3505#3506#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -149,30 +150,18 @@
           <file leaf-file-name="Location.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/location/Location.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="690">
-                  <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+                <state relative-caret-position="30">
+                  <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1262#1263#0" expanded="true" />
-                    <element signature="e#1287#1288#0" expanded="true" />
-                    <element signature="e#1321#1322#0" expanded="true" />
-                    <element signature="e#1349#1350#0" expanded="true" />
-                    <element signature="e#1384#1385#0" expanded="true" />
-                    <element signature="e#1415#1416#0" expanded="true" />
-                    <element signature="e#1463#1464#0" expanded="true" />
+                    <element signature="e#1381#1382#0" expanded="true" />
+                    <element signature="e#1406#1407#0" expanded="true" />
+                    <element signature="e#1440#1441#0" expanded="true" />
+                    <element signature="e#1468#1469#0" expanded="true" />
                     <element signature="e#1503#1504#0" expanded="true" />
-                    <element signature="e#1538#1539#0" expanded="true" />
-                    <element signature="e#1569#1570#0" expanded="true" />
-                    <element signature="e#1617#1618#0" expanded="true" />
-                    <element signature="e#1657#1658#0" expanded="true" />
-                    <element signature="e#1693#1694#0" expanded="true" />
-                    <element signature="e#1725#1726#0" expanded="true" />
-                    <element signature="e#1775#1776#0" expanded="true" />
-                    <element signature="e#1817#1818#0" expanded="true" />
-                    <element signature="e#1846#1847#0" expanded="true" />
-                    <element signature="e#1874#1875#0" expanded="true" />
-                    <element signature="e#1913#1914#0" expanded="true" />
-                    <element signature="e#1947#1948#0" expanded="true" />
+                    <element signature="e#1534#1535#0" expanded="true" />
+                    <element signature="e#1582#1583#0" expanded="true" />
+                    <element signature="e#1622#1623#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -224,11 +213,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/LocationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/user/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/location/Location.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/repository/user/location/LocationRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/user/UserController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/config/swagger/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/location/Location.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/location/LocationController.java" />
       </list>
     </option>
@@ -909,7 +898,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516380949494</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Add log data ketika create data location">
+      <created>1516406171761</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1516406171761</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -974,7 +970,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add private modifier for object UserService" />
     <MESSAGE value="Update a abstract function isUserExist and implement it in UserServiceImpl" />
     <MESSAGE value="Update endpoint API&#10;1. Retrieve single user&#10;2. Create a user&#10;3. Update a user&#10;4. Delete a user&#10;5. Delete all users" />
     <MESSAGE value="Update dependency maven" />
@@ -999,7 +994,8 @@
     <MESSAGE value="1. Create LocationController&#10;2. Create endpoint LocationController" />
     <MESSAGE value="Add documentation code for LocationController" />
     <MESSAGE value="Add Swagger" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Swagger" />
+    <MESSAGE value="Add log data ketika create data location" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add log data ketika create data location" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1212,6 +1208,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/location/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1381#1382#0" expanded="true" />
+            <element signature="e#1406#1407#0" expanded="true" />
+            <element signature="e#1440#1441#0" expanded="true" />
+            <element signature="e#1468#1469#0" expanded="true" />
+            <element signature="e#1503#1504#0" expanded="true" />
+            <element signature="e#1534#1535#0" expanded="true" />
+            <element signature="e#1582#1583#0" expanded="true" />
+            <element signature="e#1622#1623#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/repository/user/location/LocationRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1222,44 +1236,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/model/location/Location.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1262#1263#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1321#1322#0" expanded="true" />
-            <element signature="e#1349#1350#0" expanded="true" />
-            <element signature="e#1384#1385#0" expanded="true" />
-            <element signature="e#1415#1416#0" expanded="true" />
-            <element signature="e#1463#1464#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
-            <element signature="e#1538#1539#0" expanded="true" />
-            <element signature="e#1569#1570#0" expanded="true" />
-            <element signature="e#1617#1618#0" expanded="true" />
-            <element signature="e#1657#1658#0" expanded="true" />
-            <element signature="e#1693#1694#0" expanded="true" />
-            <element signature="e#1725#1726#0" expanded="true" />
-            <element signature="e#1775#1776#0" expanded="true" />
-            <element signature="e#1817#1818#0" expanded="true" />
-            <element signature="e#1846#1847#0" expanded="true" />
-            <element signature="e#1874#1875#0" expanded="true" />
-            <element signature="e#1913#1914#0" expanded="true" />
-            <element signature="e#1947#1948#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ysn/springmvc/controller/location/LocationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="65" column="31" lean-forward="true" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3806#3807#0" expanded="true" />
-            <element signature="e#3849#3850#0" expanded="true" />
+            <element signature="e#3462#3463#0" expanded="true" />
+            <element signature="e#3505#3506#0" expanded="true" />
           </folding>
         </state>
       </provider>

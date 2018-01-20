@@ -69,13 +69,6 @@ public class LocationController {
         Diagnostic diagnostic = new Diagnostic();
         diagnostic.setUnix_timestamp(new Date().getTime());
         boolean isFieldValid = true;
-        if (location.getLatitude() == 0) {
-            diagnostic.setMessage("Field latitude is required");
-        } else if (location.getLongitude() == 0) {
-            diagnostic.setMessage("Field longitude is required");
-        } else if (location.getSpeed() == 0) {
-            diagnostic.setMessage("Field speed is required");
-        }
 
         if (!isFieldValid) {
             diagnostic.setStatus(HttpStatus.BAD_REQUEST.value());

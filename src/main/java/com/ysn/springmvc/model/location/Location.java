@@ -26,19 +26,24 @@ public class Location {
     @GeneratedValue(generator = "locationSequenceGenerator")
     private long id;
     private String datetime;
-    private double latitude;
+    /*private double latitude;
     private double longitude;
-    private int speed;
+    private int speed;*/
 
     public Location() {
     }
 
-    public Location(long id, String datetime, double latitude, double longitude, int speed) {
+    /*public Location(long id, String datetime, double latitude, double longitude, int speed) {
         this.id = id;
         this.datetime = datetime;
         this.latitude = latitude;
         this.longitude = longitude;
         this.speed = speed;
+    }*/
+
+    public Location(long id, String datetime) {
+        this.id = id;
+        this.datetime = datetime;
     }
 
     public long getId() {
@@ -57,38 +62,12 @@ public class Location {
         this.datetime = datetime;
     }
 
-    public double getLatitude() {
-        return latitude;
-    }
-
-    public void setLatitude(double latitude) {
-        this.latitude = latitude;
-    }
-
-    public double getLongitude() {
-        return longitude;
-    }
-
-    public void setLongitude(double longitude) {
-        this.longitude = longitude;
-    }
-
-    public int getSpeed() {
-        return speed;
-    }
-
-    public void setSpeed(int speed) {
-        this.speed = speed;
-    }
 
     @Override
     public String toString() {
         return "Location{" +
                 "id=" + id +
                 ", datetime='" + datetime + '\'' +
-                ", latitude=" + latitude +
-                ", longitude=" + longitude +
-                ", speed=" + speed +
                 '}';
     }
 }
